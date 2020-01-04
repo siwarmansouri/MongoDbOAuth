@@ -15,3 +15,7 @@ version 2.2.2
 ## Run the application:
 ./gradlew bootRun
 
+## Test the application
+curl http://localhost:8080/fridge
+curl -v --header "Content-Type: application/json" -d  "{\"name\":\"milk\",\"owner\":\"Andrew\",\"expiration\":\"01-01-2020\"}" http://localhost:8080/fridge
+
